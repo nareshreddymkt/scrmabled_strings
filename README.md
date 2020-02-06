@@ -1,2 +1,2 @@
 # scrmabled_strings
-Scrambled Word Count in String/Text line
+The Program is used to Count the Scrambled Words in String/Text line.
