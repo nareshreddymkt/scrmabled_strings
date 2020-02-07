@@ -1,5 +1,6 @@
 # Scrambled Word Count 
-The Program is used to Count the Scrambled Words in a file which contains Text lines.
+    The Program is used to Count the Scrambled Words in a file which contains Text lines.
+     - developed and validated at  PYTHON 3.7.4
 
 Included files in the Current Repo/Project:
 1. Readme file --> README.md
