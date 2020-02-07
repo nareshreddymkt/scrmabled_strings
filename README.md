@@ -18,8 +18,7 @@ Program Execution Steps:
         scrmabled_strings.py --dictionary "dictionary_words.txt" --input "search_string_file.txt"
         
         sample output:
-            Case #1: 5
-            Case #2: 2
+            Case #1: 4
 
 For running test Cases(Inside the project directory):
     command: python -m unittest
