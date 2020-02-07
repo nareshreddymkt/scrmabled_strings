@@ -16,12 +16,14 @@ Program Execution Steps:
     
     Sample run:
         scrmabled_strings.py --dictionary "dictionary_words.txt" --input "search_string_file.txt"
+        
         sample output:
             Case #1: 5
             Case #2: 2
 
 For running test Cases(Inside the project directory):
     command: python -m unittest
+    
     sample output:
         Case #1: 4
         .No two words in the dictionary are the same.
