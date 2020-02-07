@@ -21,7 +21,7 @@ Program Execution Steps:
             Case #1: 4
 
 For running test Cases(Inside the project directory):
-    command: python -m unittest
+    command: python -m unittest test_scrmables_strings.py
     
     sample output:
         Case #1: 4
