@@ -2,9 +2,9 @@
 The Program is used to Count the Scrambled Words in a file which contains Text lines.
 
 Included files in the Current Repo/Project:
-1.Readme file --> README.md
-2.Source file --> scrmabled_strings.py 
-3.Test Cases file --> test_scrmables_strings.py
+1. Readme file --> README.md
+2. Source file --> scrmabled_strings.py 
+3. Test Cases file --> test_scrmables_strings.py
 
 
 
