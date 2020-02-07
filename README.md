@@ -1,5 +1,6 @@
 # Scrambled Word Count 
-The Program is used to Count the Scrambled Words in a file which contains Text lines.
+    The Program is used to Count the Scrambled Words in a file which contains Text lines.
+     - developed and validated at  PYTHON 3.7.4
 
 Included files in the Current Repo/Project:
 1. Readme file --> README.md
@@ -15,7 +16,7 @@ Program Execution Steps:
     command: scrmabled_strings.py --dictionary "dictionary words file path" --input "search string file path"
     
     Sample run:
-        scrmabled_strings.py --dictionary "dictionary_words.txt" --input "search_string_file.txt"
+        scrmabled_strings.py --dictionary "files/dictionary_words" --input "files/search_string"
         
         sample output:
             Case #1: 4
