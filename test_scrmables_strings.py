@@ -7,6 +7,11 @@ search_file = '{}/files/search_string'.format(src_dir, )
 
 
 class MyTestCase(unittest.TestCase):
+    def test_1(self):
+        dict_filename = '{}/files/dictionary_words'.format(src_dir, )
+        response = print_scramble_word_count(dict_filename, search_file)
+        self.assertEqual(response, None)
+
     def test_limitation_1(self):
         dict_filename = '{}/files/dictionary_words_limitation_1'.format(src_dir, )
         response = print_scramble_word_count(dict_filename, search_file)
