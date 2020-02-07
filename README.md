@@ -15,7 +15,7 @@ Program Execution Steps:
     command: scrmabled_strings.py --dictionary "dictionary words file path" --input "search string file path"
     
     Sample run:
-        scrmabled_strings.py --dictionary "dictionary_words.txt" --input "search_string_file.txt"
+        scrmabled_strings.py --dictionary "files/dictionary_words" --input "files/search_string"
         
         sample output:
             Case #1: 4
