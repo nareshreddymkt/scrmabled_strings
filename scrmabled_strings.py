@@ -24,8 +24,10 @@ def word_check(dict_wrd, srch_wrd, ):
             break
         if c == f and srch_wrd[i + g] == l:
             suc = set([c for c in srch_wrd[i + 1:i + g]])
-            flag = check_similarity(wuc, suc)
-            break
+            if len(wuc) == len(suc):
+                flag = check_similarity(wuc, suc)
+            if flag:
+                break
     return flag
 
 
