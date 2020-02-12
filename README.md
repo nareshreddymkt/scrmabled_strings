@@ -32,4 +32,22 @@ For running test Cases(Inside the project directory):
         .
         ----------------------------------------------------------------------
         Ran 4 tests in 0.004s
+        
+        
+DOCKER pipeline:
 
+step 1. Get the docker image for Scrambled application from below link,
+		
+        docker pull nareshreddymkt/python-scrambled-wc
+
+step 2. run a container for the above docker image.
+		
+        docker run -v "<dictionary_words file path>":/code/files/dictionary_words1 -v "<search file path>":/code/files/search_string1  -it nareshreddymkt/python-scrambled-wc
+        
+        
+Note: To support CICD with docker, integrate github or git with jenkins/open stack using webhooks.
+
+
+Simplify the above steps with small shell script.
+
+run ./scrmabled_strings.sh  <dictionary_words file path>   <search file path>
