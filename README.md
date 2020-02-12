@@ -51,8 +51,9 @@ Note: To support CICD with docker, integrate github or git with jenkins/open sta
 Simplify the above steps with small shell script.
 
 run ./scrmabled_strings.sh  <dictionary_words file path>  <search file path>
+
+	ex: ./scrmabled_strings.sh /mnt/dictionary_words.txt  /mnt/search_file.txt
 	
-	
-sample output:
-	Case #1: 4
-	Case #2: 4
+	sample output:
+		Case #1: 4
+		Case #2: 4
