@@ -45,12 +45,17 @@ step 1. Get the docker image for Scrambled application from below link,
 step 2. run a container for the above docker image.
 		
         docker run -v "<dictionary_words file path>":/code/files/dictionary_words1 -v "<search file path>":/code/files/search_string1  -it nareshreddymkt/python-scrambled-wc
+	
+	where 
+		<dictionary_words file path> ==> the file path which contain all the dictionary words.
+		<search file path>	     ==> the file path which contain all the Scrambled word lines.
+	
         
         
-Note: To support CICD with docker, integrate github or git with jenkins/open stack using webhooks.
+Note: To support CICD with docker, Need integrate github or git with jenkins/open stack using webhooks.
 
 
-Simplify the above steps with small shell script.
+Simplifed the above steps with small shell script.
 
 run ./scrmabled_strings.sh  "<dictionary_words file path>"  "<search_file_path>"
 
