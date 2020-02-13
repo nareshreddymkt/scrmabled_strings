@@ -29,7 +29,7 @@ Program Execution Steps(with Docker and shell):
     command:  ./scrmabled-strings.sh  "<dictionary_words file path>"  "<search_file_path>"
 
 	    Sample run:
-	    	./scrmabled-strings.sh /mnt/dictionary_words.txt  /mnt/search_file.txt
+	    	./scrmabled-strings.sh "/mnt/dictionary_words.txt"  "/mnt/search_file.txt"
        		 
 		 sample output:
             
@@ -49,6 +49,8 @@ For running test Cases(Inside the project directory):
         
         
 DOCKER pipeline:
+
+To run existing container :
 
 step 1. Get the docker image for Scrambled application from below link,
 		
@@ -76,3 +78,14 @@ run ./scrmabled-strings.sh  "<dictionary_words file path>"  "<search_file_path>"
 	sample output:
 		Case #1: 4
 		Case #2: 4
+
+
+To build and run docker :
+
+step 1. docker build -t python-scrambled .
+
+step 2. docker run -v "<dictionary_words file path>":/code/files/dictionary_words -v "<search file path>":/code/files/search_string  -it nareshreddymkt/python-scrambled-wc
+	
+	where 
+		<dictionary_words file path> ==> the file path which contain all the dictionary words.
+		<search file path>	     ==> the file path which contain all the Scrambled word lines.
