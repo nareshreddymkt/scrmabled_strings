@@ -6,12 +6,14 @@ Included files in the Current Repo/Project:
 1. Readme file --> README.md
 2. Source file --> scrmabled_strings.py 
 3. Test Cases file --> test_scrmables_strings.py
+4. Docker config file --> Dockerfile
+5. project run file --> scrmabled-strings.sh
 
 Docker image is available at : nareshreddymkt/python-scrambled-wc
 url : https://hub.docker.com/r/nareshreddymkt/python-scrambled-wc/tags
 
 
-Program Execution Steps:
+Program Execution Steps(with PYTHON Oly):
 1. clone the Project into the Local system
 2. go inside the project directory where the ReadMe/Source file is available.
 3. run the following command:
@@ -19,9 +21,19 @@ Program Execution Steps:
     
     Sample run:
         scrmabled_strings.py --dictionary "files/dictionary_words" --input "files/search_string"
-        
-        sample output:
-            Case #1: 4
+
+Program Execution Steps(with Docker and shell):
+1. clone the Project into the Local system
+2. go inside the project directory where the ReadMe/Source file is available.
+3. run the following command:
+    command:  ./scrmabled-strings.sh  "<dictionary_words file path>"  "<search_file_path>"
+
+	    Sample run:
+	    	./scrmabled-strings.sh /mnt/dictionary_words.txt  /mnt/search_file.txt
+       		 
+		 sample output:
+            
+	    	 Case #1: 4
 
 For running test Cases(Inside the project directory):
     command: python -m unittest test_scrmables_strings.py
@@ -44,7 +56,7 @@ step 1. Get the docker image for Scrambled application from below link,
 
 step 2. run a container for the above docker image.
 		
-        docker run -v "<dictionary_words file path>":/code/files/dictionary_words1 -v "<search file path>":/code/files/search_string1  -it nareshreddymkt/python-scrambled-wc
+        docker run -v "<dictionary_words file path>":/code/files/dictionary_words -v "<search file path>":/code/files/search_string  -it nareshreddymkt/python-scrambled-wc
 	
 	where 
 		<dictionary_words file path> ==> the file path which contain all the dictionary words.
@@ -57,9 +69,9 @@ Note: To support CICD with docker, Need integrate github or git with jenkins/ope
 
 Simplifed the above steps with small shell script.
 
-run ./scrmabled_strings.sh  "<dictionary_words file path>"  "<search_file_path>"
+run ./scrmabled-strings.sh  "<dictionary_words file path>"  "<search_file_path>"
 
-	ex: ./scrmabled_strings.sh /mnt/dictionary_words.txt  /mnt/search_file.txt
+	ex: ./scrmabled-strings.sh /mnt/dictionary_words.txt  /mnt/search_file.txt
 	
 	sample output:
 		Case #1: 4
